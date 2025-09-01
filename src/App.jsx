@@ -20,10 +20,7 @@ function App() {
     console.log("è cambiata la variabile di stato")
     const filtered = films.filter((film) => {
       //pongo la condizione per restituire l'array iniziale in caso di valore "" nella variabile di stato genreSelected 
-      if (genreSelected !== "")
-        return film.genre == genreSelected
-      else
-        return film
+      return genreSelected !== "" ? film.genre == genreSelected : true
     },)
     SetFilteredFilms(filtered)
   }, [genreSelected]);
