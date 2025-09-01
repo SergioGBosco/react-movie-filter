@@ -14,6 +14,19 @@ function App() {
   return (
     <div className="container">
       <div className="row">
+        <div className="col-100">
+          <div className="filter_slot">
+            <select name="genre-film" id="genre-film" className="genre-film">
+              <option value="">Filtra per genere...</option>
+              <option value="Fantascienza">Fantasciernza</option>
+              <option value="Thriller">Thriller</option>
+              <option value="Azione">Azione</option>
+              <option value="Romantico">Romantico</option>
+            </select>
+          </div>
+        </div>
+
+
         {filmsList.map((film) => {
           return (
             <div className="col-100">

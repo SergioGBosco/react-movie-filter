@@ -38,3 +38,10 @@
 .post span {
   color: blue;
 }
+
+/* Filter */
+
+.genre-film {
+  padding: 10px;
+
+}
